@@ -6,11 +6,13 @@ A arquitetura da **API** baseia-se em **REST**, utilizando métodos **HTTP** pad
 
 Dentre os pacotes NuGet utilizados, o **AutoMapper** é o responsável pelo mapeamento entre objetos de domínio e requisição/resposta, reduzindo a necessidade de código repetitivo e manual. O **FluentAssertions** é utilizado nos testes de unidade para tornar as verificações mais legíveis, ajudando a escrever testes claros e compreensíveis. Para as validações, o **FluentValidation** é usado para implementar regras de validação de forma simples e intuitiva nas classes de requisições, mantendo o código limpo e fácil de manter. Por fim, o **EntityFramework** atua como um ORM (Object-Relational Mapper) que simplifica as interações com o banco de dados, permitindo o uso de objetos .NET para manipular dados diretamente, sem a necessidade de lidar com consultas SQL.
 
+![hero-image]
+
 ### Features
 
 - **Domain-Driven Design (DDD)**: Estrutura modular que facilita o entendimento e a manutenção do domínio da aplicação.
 - **Testes de Unidade**: Testes abrangentes com FluentAssertions para garantir a funcionalidade e a qualidade.
-- **Geração de Relatórios**: Capacidade de exportar relatórios detalhados para **[PDF](https://github.com/empira/PDFsharp)** e **[Excel](https://github.com/ClosedXML/ClosedXML)** , oferecendo uma análise visual e eficaz das despesas.
+- **Geração de Relatórios**: Capacidade de exportar relatórios detalhados para **[PDF][pdf-sharp-migra-doc]** e **[Excel][closed-xml]** , oferecendo uma análise visual e eficaz das despesas.
 - **RESTful API com Documentação Swagger**: Interface documentada que facilita a integração e o teste por parte dos desenvolvedores.
 
 ## Getting Started
@@ -20,7 +22,7 @@ Para obter uma cópia local funcionando, siga estes passos simples.
 ### Requisitos
 
 * Visual Studio versão 2022+ ou Visual Studio Code
-* Windows 10+ ou Linux/MacOS com **[.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)** instalado
+* Windows 10+ ou Linux/MacOS com **[.NET SDK][dot-net-sdk]** instalado
 * MySQL Server
 
 ### Instalação
@@ -31,4 +33,14 @@ Para obter uma cópia local funcionando, siga estes passos simples.
     ```
 
 2. Preencha as informações no arquivo `appsettings.Development.json`.
-3. Execute a API e aproveite o seu teste :)
+3. Execute a API e aproveite o seu teste :rocket:
+
+
+
+<!-- Links -->
+[pdf-sharp-migra-doc]: https://github.com/empira/PDFsharp
+[closed-xml]: https://github.com/ClosedXML/ClosedXML
+[dot-net-sdk]: https://dotnet.microsoft.com/en-us/download/dotnet/8.0
+
+<!-- Images -->
+[hero-image]: images/heroimage.png
